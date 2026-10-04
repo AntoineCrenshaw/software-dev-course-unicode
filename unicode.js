@@ -90,23 +90,19 @@ let firstCodePoint = inputString1.charCodeAt(0); // Your code here
 let thirdCodePoint = inputString1.charCodeAt(2); // Your code here
 
 // Task 2
-let wordFromCodePoints = [72,101,108,108];
-let stringFromCodePoints = String.fromCharCode(wordFromCodePoints[0]) + String.fromCharCode(wordFromCodePoints[1]) + String.fromCharCode(wordFromCodePoints[2]) + String.fromCharCode(wordFromCodePoints[3]);
+let wordFromCodePoints = String.fromCharCode(74,97,118,97,83, 99, 114,105,112,116);
  // Your code here
 
 // Task 3
 let inputString2 = "Launch";
 let extractedFirstCodePoint = inputString2.charCodeAt(0); //extract 1st unicode
 let extractedLastCodePoint = inputString2.charCodeAt(5); //extract last unicode
-let swappedString = String.fromCharCode(extractedLastCodePoint) + inputString2.slice(1,5) + String.fromCharCode(extractedFirstCodePoint);
+let swappedString = String.fromCharCode(inputString2.charCodeAt(5)) + inputString2.slice(1,5) + String.fromCharCode(inputString2.charCodeAt(0));
 
 // Log all results
 console.log({
   firstCodePoint,
   thirdCodePoint,
   wordFromCodePoints,
-  stringFromCodePoints,
-  extractedFirstCodePoint,
-  extractedLastCodePoint,
   swappedString,
 });
